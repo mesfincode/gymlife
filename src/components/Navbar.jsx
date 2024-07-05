@@ -1,20 +1,41 @@
 import React from "react";
-import logo from '../assets/img/logo.png'
+import logo from "../assets/img/logo.png";
+import { navLinks } from "../constants";
 const Navbar = () => {
   return (
-    <section>
+    <section className="">
       <header className="fixed w-full top-0 left-0 right-0">
-        <nav className="flex justify-between items-center px-24 py-4 bg-black opacity-60">
-            <a href="" className="text-white">
-                <img src={logo} alt="" width={100} height={100}/>
-            </a>
-            <ul className="flex justify-center items-center gap-4 ">
-                <li><a href="" className="text-white text-2xl hover:border-b hover:border-primary rounded-lg px-4 py-1">Home</a></li>
-                <li><a href="" className="text-white text-2xl hover:border-b hover:border-primary  rounded-lg px-4 py-1">About</a></li>
-                <li><a href="" className="text-white text-2xl hover:border-b hover:border-primary  rounded-lg px-4 py-1">Contact</a></li>
-                <li><a href="" className="text-white text-2xl bg-primary rounded-full px-4 py-1">Register</a></li>
+        <nav className="flex justify-between items-center px-16 py-8 ">
+          <a href="" className="text-white">
+            <img src={logo} alt="" width={100} height={100} />
+          </a>
+          <ul className="flex justify-center items-center  ">
+            {navLinks.map((item) => {
+              return (
+                <li>
+                  <a
+                    href={item.url}
+                    className="text-white font-semibold hover:border-b hover:border-primary rounded-xl px-4 py-1"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
 
-            </ul>
+            <li>
+              <a
+                href=""
+                className="text-white text-2xl bg-primary rounded-full px-4 py-2 font-raleway"
+              >
+                Register
+              </a>
+            </li>
+          </ul>
+
+          {/* <div>
+                <h1 className="text-white">social icons</h1>
+            </div> */}
         </nav>
       </header>
     </section>

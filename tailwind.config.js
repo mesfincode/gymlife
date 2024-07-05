@@ -8,6 +8,11 @@ export default {
     extend: {
       colors:{
         "primary":"#f36100"
+      },
+      fontFamily:{
+        sans: ['sans-serif', 'sans'],
+        oswald:['Oswald','sans-serif'],
+        raleway:['Raleway','sans-serif']
       }
     },
   },

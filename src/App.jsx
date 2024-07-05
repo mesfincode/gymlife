@@ -7,8 +7,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
+    <section className="relative">
+    <Navbar />
+    <Hero />
+
+    </section>
+     
     </>
   );
 }
