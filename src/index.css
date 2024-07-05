@@ -14,3 +14,29 @@ body{
 .responseive-grid{
   grid-template-columns: repeat(auto-fit,minmax(110px, 1fr));
 }
+.cliped{
+  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 100%, 0 37%);
+}
+.ci-text:after {
+  /* display: flex; */
+  /* background-color: red;
+  content: "";
+  height: 400px;
+  width: 400px;
+  z-index: 1000; */
+  position: absolute;
+  left: -5px;
+  top: -44px;
+  height: 100px;
+  width: 600px;
+  border-top: 4px solid #464646;
+  background: #0a0a0a;
+  content: "";
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+.zi-10{
+  z-index: 10;
+}

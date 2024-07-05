@@ -5,7 +5,7 @@ const ChoosUs = () => {
   return (
     <section className="bg-black-1 flex justify-center items-center flex-col w-full space-y-8 py-16 ">
       <h1 className="text-primary">WHY CHOSE US?</h1>
-      <h1 className="text-4xl text-white font-bold">PUSH YOUR LIMITS FORWARD</h1>
+      <h1 className="text-4xl text-white font-bold text-center">PUSH YOUR LIMITS FORWARD</h1>
      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full px-4 xl:px-48">
      {chooseUs.map((item, index) => (
         <div key={index} className="flex justify-center items-center flex-col space-y-4 cursor-pointer ">

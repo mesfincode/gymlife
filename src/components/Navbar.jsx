@@ -4,7 +4,7 @@ import menuIcon from "../assets/img/menu-icon.svg"
 import { navLinks } from "../constants";
 const Navbar = () => {
   return (
-    <section className="">
+    <section className="z-50">
       <header className="fixed w-full top-0 left-0 right-0">
         <nav className=" justify-between items-center px-4 xl:px-24 py-8 flex">
           <a href="" className="text-white">
