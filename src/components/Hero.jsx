@@ -4,10 +4,10 @@ import hero2 from '../assets/img/hero/hero-2.jpg'
 
 const Hero = () => {
   return (
-    <div>
-   
+    <section className=''>
+    <img src={hero1} alt="" className='h-full w-full'/>
  
-    </div>
+    </section>
   )
 }
 
