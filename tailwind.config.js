@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       colors:{
-        "primary":"#f36100"
+        "primary":"#f36100",
+        "black":{
+          "1":"#0a0a0a",
+          "2":"#15151",
+          "3":"#0a0a0a"
+        }
       },
       fontFamily:{
         sans: ['sans-serif', 'sans'],

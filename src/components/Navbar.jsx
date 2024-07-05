@@ -1,15 +1,16 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
 import { navLinks } from "../constants";
+import menuIcon from "../assets/img/menu-icon.svg"
 const Navbar = () => {
   return (
     <section className="">
       <header className="fixed w-full top-0 left-0 right-0">
-        <nav className="flex justify-between items-center px-16 py-8 ">
+        <nav className=" justify-between items-center px-4 xl:px-24 py-8 flex">
           <a href="" className="text-white">
             <img src={logo} alt="" width={100} height={100} />
           </a>
-          <ul className="flex justify-center items-center  ">
+          <ul className=" justify-center items-center hidden lg:flex  ">
             {navLinks.map((item) => {
               return (
                 <li>
@@ -32,6 +33,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <img src={menuIcon} alt="" className="block lg:hidden text-white w-[40px] h-[40px]" />
 
           {/* <div>
                 <h1 className="text-white">social icons</h1>
