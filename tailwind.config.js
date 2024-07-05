@@ -10,14 +10,19 @@ export default {
         "primary":"#f36100",
         "black":{
           "1":"#0a0a0a",
-          "2":"#15151",
-          "3":"#0a0a0a"
-        }
+          "2":"#151515",
+          "3":"#0a0a0a",
+        },
+        "black-text":"#a9a9a9"
+        
       },
       fontFamily:{
         sans: ['sans-serif', 'sans'],
         oswald:['Oswald','sans-serif'],
         raleway:['Raleway','sans-serif']
+      },
+      screens: {
+        xsm:"300px"
       }
     },
   },

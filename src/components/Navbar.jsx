@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
-import { navLinks } from "../constants";
 import menuIcon from "../assets/img/menu-icon.svg"
+import { navLinks } from "../constants";
 const Navbar = () => {
   return (
     <section className="">
