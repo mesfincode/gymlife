@@ -6,6 +6,7 @@ import Classes from "./components/Classes";
 import Banner from "./components/Banner";
 import OurPlan from "./components/OurPlan";
 import Gallery from "./components/Gallery";
+import OurTeam from "./components/OurTeam";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
     
     </section>
     <Gallery />
+    <OurTeam />
      
     </>
   );

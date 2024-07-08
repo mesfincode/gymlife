@@ -40,4 +40,16 @@ body{
 .zi-10{
   z-index: 10;
 }
+.img-card{
+  cursor: pointer;
+}
+.img-card:hover{
+  border: 2px solid red;
+  background-image: url("./assets/img/image-icon.svg");
+  background-color: black;
+  z-index: 100;
+}
 
+.navbar-z{
+  z-index: 10000;
+}

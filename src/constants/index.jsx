@@ -13,6 +13,12 @@ import gallery7 from '../assets/img/gallery/gallery-7.jpg'
 import gallery8 from '../assets/img/gallery/gallery-8.jpg'
 import gallery9 from '../assets/img/gallery/gallery-9.jpg'
 
+import team1 from '../assets/img/team/team-1.jpg'
+import team2 from '../assets/img/team/team-2.jpg'
+import team3 from '../assets/img/team/team-3.jpg'
+import team4 from '../assets/img/team/team-4.jpg'
+import team5 from '../assets/img/team/team-5.jpg'
+import team6 from '../assets/img/team/team-6.jpg'
 
 import class1 from '../assets/img/classes/class-1.jpg'
 import class2 from '../assets/img/classes/class-2.jpg'
@@ -21,6 +27,10 @@ import class4 from '../assets/img/classes/class-4.jpg'
 import class5 from '../assets/img/classes/class-5.jpg'
 import classDetail from '../assets/img/classes/class-details/class-detailsl.jpg'
 import classProfile from '../assets/img/classes/class-details/trainer-profile.jpg'
+
+import address1 from '../assets/img/address/location.svg'
+import address2 from '../assets/img/address/mail.svg'
+import address3 from '../assets/img/address/smartphone.svg'
 
 export const navLinks=[
     {
@@ -138,6 +148,23 @@ export const plans=[
 ]
 
 export const photoGallery = [gallery1,gallery2,gallery3,gallery4,gallery5,gallery6]
- 
+export const trainerTeam= [team1,team2,team3,team4,team5,team6]
 
+export const address=[
+  {
+    "icon": address1,
+    "label":"location",
+    "text":"333 Middle Winchendon Rd, Rindge,NH 03461",
+  },
+  {
+    "icon": address2,
+    "label":"phone",
+    "text":"125-711-811 | 125-668-886",
+  },
+  {
+    "icon": address3,
+    "label":"email",
+    "text":"Support.gymcenter@gmail.com",
+  }
+]
  

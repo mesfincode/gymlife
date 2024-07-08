@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/img/logo.png";
 import menuIcon from "../assets/img/menu-icon.svg"
 import { navLinks } from "../constants";
 const Navbar = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navbarRef.current) {
+        setScrollPosition(window.scrollY);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <section className="z-50">
-      <header className="fixed w-full top-0 left-0 right-0">
-        <nav className=" justify-between items-center px-4 xl:px-24 py-8 flex">
+    <section className="navbar-z"       ref={navbarRef} >
+      <header className={`fixed w-full top-0 left-0 right-0 navbar-z ${ scrollPosition > 100 ? ' bg-black-2 opacity-80 text-white' : 'bg-transparent '}` }>
+        <nav className=" justify-between items-center px-4 xl:px-24 py-4 flex navbar-z">
           <a href="" className="text-white">
             <img src={logo} alt="" width={100} height={100} />
           </a>
-          <ul className=" justify-center items-center hidden lg:flex  ">
+          <ul className=" justify-center items-center hidden lg:flex navbar-z ">
             {navLinks.map((item) => {
               return (
                 <li>
