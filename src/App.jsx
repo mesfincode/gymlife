@@ -5,6 +5,7 @@ import ChoosUs from "./components/ChoosUs";
 import Classes from "./components/Classes";
 import Banner from "./components/Banner";
 import OurPlan from "./components/OurPlan";
+import Gallery from "./components/Gallery";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,7 +19,9 @@ function App() {
     <Classes />
     <Banner />
     <OurPlan />
+    
     </section>
+    <Gallery />
      
     </>
   );

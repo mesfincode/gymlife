@@ -3,6 +3,17 @@ import gymNutrition from '../assets/img/gym-nutrition.png'
 import gymTraining from '../assets/img/gym-training.png'
 import gymPersonalized from '../assets/img/gym-personalized.png'
 
+import gallery1 from '../assets/img/gallery/gallery-1.jpg'
+import gallery2 from '../assets/img/gallery/gallery-2.jpg'
+import gallery3 from '../assets/img/gallery/gallery-3.jpg'
+import gallery4 from '../assets/img/gallery/gallery-4.jpg'
+import gallery5 from '../assets/img/gallery/gallery-5.jpg'
+import gallery6 from '../assets/img/gallery/gallery-6.jpg'
+import gallery7 from '../assets/img/gallery/gallery-7.jpg'
+import gallery8 from '../assets/img/gallery/gallery-8.jpg'
+import gallery9 from '../assets/img/gallery/gallery-9.jpg'
+
+
 import class1 from '../assets/img/classes/class-1.jpg'
 import class2 from '../assets/img/classes/class-2.jpg'
 import class3 from '../assets/img/classes/class-3.jpg'
@@ -87,8 +98,46 @@ catagory:"Strength",
 ]
 
  
+export const plans=[
+  {
+    "title":"Class drop-in",
+    "price":39.0,
+    "subtitle":"SINGLE CLASS",
+    "features":["Free riding" ,
+      "Unlimited equipments",
+      "Personal trainer", 
+      "Weight losing classes",
+      "Month to mouth",
+      "No time restriction"
+    ]
+  },
+  {
+    "title":"12 Month unlimited",
+    "price":99.0,
+    "subtitle":"SINGLE CLASS",
+    "features":["Free riding" ,
+      "Unlimited equipments",
+      "Personal trainer", 
+      "Weight losing classes",
+      "Month to mouth",
+      "No time restriction"
+    ]
+  },  {
+    "title":"6 Month unlimited",
+    "price":59.0,
+    "subtitle":"SINGLE CLASS",
+    "features":["Free riding" ,
+      "Unlimited equipments",
+      "Personal trainer", 
+      "Weight losing classes",
+      "Month to mouth",
+      "No time restriction"
+    ]
+  }
 
+]
 
+export const photoGallery = [gallery1,gallery2,gallery3,gallery4,gallery5,gallery6]
  
 
  
