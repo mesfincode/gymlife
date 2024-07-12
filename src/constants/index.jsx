@@ -32,6 +32,11 @@ import address1 from '../assets/img/address/location.svg'
 import address2 from '../assets/img/address/mail.svg'
 import address3 from '../assets/img/address/smartphone.svg'
 
+import facebook from '../assets/img/address/facebook.svg'
+import instagram from '../assets/img/address/instagram.svg'
+import youtube from '../assets/img/address/youtube.svg'
+import twitter from '../assets/img/address/twitter.svg'
+import email from '../assets/img/address/mail.svg'
 export const navLinks=[
     {
         "label":  "ABOUT US",
@@ -168,3 +173,20 @@ export const address=[
   }
 ]
  
+export const socialIcons = [
+{
+  "icon":facebook,
+  "label":"facebook"
+},
+{
+  "icon":twitter,
+  "label":"twitter"
+},{
+  "icon":youtube,
+  "label":"youtube"
+},
+{
+  "icon":instagram,
+  "label":"email"
+}
+]
