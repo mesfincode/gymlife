@@ -11,6 +11,7 @@ import Address from "./components/Address";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route element={<HomePage />} path="/" />
+          <Route element={<AboutUsPage />} path="/about-us" />
+
         </Routes>
         <Footer />
       </BrowserRouter>

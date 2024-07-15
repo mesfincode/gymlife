@@ -2,7 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import logo from "../assets/img/logo.png";
 import menuIcon from "../assets/img/menu-icon.svg"
 import { navLinks } from "../constants";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const location = useLocation();
   const [scrollPosition, setScrollPosition] = useState(0);
   const navbarRef = useRef(null);
 
@@ -23,19 +25,21 @@ const Navbar = () => {
     <section className="navbar-z"       ref={navbarRef} >
       <header className={`fixed w-full top-0 left-0 right-0 navbar-z ${ scrollPosition > 100 ? ' bg-black-2 opacity-80 text-white' : 'bg-transparent '}` }>
         <nav className=" justify-between items-center px-4 xl:px-24 py-4 flex navbar-z">
-          <a href="" className="text-white">
+          <Link to={""} className="text-white">
             <img src={logo} alt="" width={100} height={100} />
-          </a>
+          </Link>
           <ul className=" justify-center items-center hidden lg:flex navbar-z ">
             {navLinks.map((item) => {
+              console.log(item.url," = ",location.pathname)
+              const isActive = item.url == location.pathname
               return (
                 <li>
-                  <a
-                    href={item.url}
-                    className="text-white font-semibold hover:border-b hover:border-primary rounded-xl px-4 py-1"
+                  <Link
+                    to={item.url}
+                    className={`text-white font-semibold hover:border-b hover:border-primary rounded-xl px-4 py-1 ${isActive?"border-b-2 border-primary":""}`}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
